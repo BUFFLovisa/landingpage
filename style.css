@@ -1,0 +1,31 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+
+
+
+
+.btn {
+    font-size: 2rem;
+    font-weight: 100;
+    border: 2px solid transparent;
+    padding: 0.5rem 1.2 rem
+    letter-spacing 1rem;
+    color: black;
+    background-color: crimson;
+}
+
+.btn:hover{
+    color: crimson;
+    background-color: black;
+}
+a.btn{
+    text-decoration: none;
+    font-family: fantasy;
+}
