@@ -1,14 +1,39 @@
-.wrapper{
+.hero{
     display: flex;
-    justify-content: center;
+    grid-template-areas: hero;
     align-items: center;
-    height: 100vh;
+    height: var(--hero-height)
+    max-height var(--hero-max-height)
+}
+
+:root{
+--hero-height: 60vh;
+--hero-max-height: 500px;
 }
 
 
+  .hero > img {
+    object-fit: cover;
+    height: min(var(--hero-height), var(--hero-max-height));
+    width: 1000%;
+    
+    justify-self: end;
+  }
 
+.hero filter{
+    position: absolute;
+    inset: 0;
+    background: #000000;
+}
 
-
+.site-head{
+    font-display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: large;
+    font-size: 600;
+    text-transform: uppercase;
+}
 
 
 .btn {
